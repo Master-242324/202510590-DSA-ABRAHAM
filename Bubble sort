@@ -1,0 +1,36 @@
+Open
+Bubble sort
+#2
+Jump to bottom
+Description
+@Master-242324
+Master-242324
+opened 2 days ago
+Owner
+#include
+
+using namespace std;
+
+int main()
+{
+int numb[4]={16,28,9,10};
+
+cout<<"Before sorting"<<endl;
+for(int i=0;i<4;i++){
+cout<<numb[i]<<endl;
+}
+cout<<"After sorting "<<endl;
+for(int i=0;i<4;i++){
+for(int j=0;j<4;j++){
+if(numb[j]>numb[j+1]){
+int temp=numb[j];
+numb[j]=numb[j+1];
+numb[j+1]=temp;
+}
+}
+}
+for(int i=0;i<4;i++){
+cout<<numb[i]<<endl;
+}
+return 0;
+}
